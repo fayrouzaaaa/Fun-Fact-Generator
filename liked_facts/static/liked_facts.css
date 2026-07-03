@@ -1,0 +1,62 @@
+.navbar{
+    text-align: center;
+}
+
+.navbar a, span {
+    color: #7ca0b5;
+    font-family: "Lucida Sans";
+}
+
+.navbar a:hover{
+    color: #456b7e;
+}
+
+#emptyView {
+    color: #456b7e;
+    font-family: "Lucida Sans";
+    font-size: 30px;
+    margin:30px;
+}
+
+#facts {
+    margin: 30px;
+}
+
+#fact {
+    color: #253849;
+    font-family: "Lucida Calligraphy";
+    font-size: 20px;
+}
+
+#unlikefact {
+    margin-left: 15px;
+    border: none;
+    background-color: transparent;
+    color: #a11010;
+}
+
+#unlikefact:hover {
+    transition: 0.2s;
+    transform: translateY(-5%);
+    color: #5c0c0c;
+    cursor:pointer;
+}
+
+#backButton {
+    background-color: #7ca0b5;
+    color: #ffffff;
+    border: 1px solid #456b7e;
+    border-radius: 6px;
+    padding: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 100%;
+    margin: 10px;
+    width:120px;
+}
+
+#backButton:hover {
+     background-color: #456b7e;
+    transition: 0.2s;
+    transform: translateY(-5%);
+}

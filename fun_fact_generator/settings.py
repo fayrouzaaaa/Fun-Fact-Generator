@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'add_fact',
     'generate_fact',
+    'liked_facts',
 ]
 
 MIDDLEWARE = [

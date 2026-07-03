@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+  <title>Liked Quotes</title>
+    <link rel="stylesheet" href ="{% static 'liked_facts.css' %}">
+</head>
+<body>
+<div class="navbar">
+    <a href="{%url 'addFact' %}">Add Fun Fact</a>
+    <span> | </span>
+    <a href="{% url 'generateFact' %}">Generate Fun Fact</a>
+    <span> | </span>
+    <a href="{% url 'likedFacts' %}">Liked Fun Facts</a>
+    <span> | </span>
+    <a href="">All Fun Facts</a>
+
+    {% for fact in facts %}
+    <div id="facts">
+        <div id="fact">{{ fact.fact }} <a href="{% url 'unlike' fact.id %}"><button id="unlikefact"><i class="fa-solid fa-heart"></i></button></a></div>
+    </div>
+        <hr>
+
+    {% empty %}
+    <p id="emptyView">No liked fun facts yet</p>
+    {% endfor %}
+    <a href="{% url ''%}"><button id="backButton">Back</button></a>
+</div>
+<script src="https://kit.fontawesome.com/f1b54785bc.js" crossorigin="anonymous"></script>
+</body>
+</html>

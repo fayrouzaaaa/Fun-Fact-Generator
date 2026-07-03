@@ -13,7 +13,7 @@
     <span> | </span>
     <a href="{% url 'generateFact' %}">Generate Fun Fact</a>
     <span> | </span>
-    <a href="">Liked Fun Facts</a>
+    <a href="{% url 'likedFacts' %}">Liked Fun Facts</a>
     <span> | </span>
     <a href="">All Fun Facts</a>
 </div>
@@ -21,9 +21,9 @@
     <div id="frame">
         <p id="fact">{{fact}}
          {% if  likedState == False %}
-            <a href=""><button id="likefact"><i class="fa-regular fa-heart"></i></button></a>
+            <a href="{% url 'likeButton' id %}"><button id="likefact"><i class="fa-regular fa-heart"></i></button></a>
             {% else %}
-            <a href=""><button id="unlikefact"><i class="fa-solid fa-heart"></i></button></a>
+            <a href="{% url 'likeButton' id %}"><button id="unlikefact"><i class="fa-solid fa-heart"></i></button></a>
             {% endif %}
         </p>
         <br>
