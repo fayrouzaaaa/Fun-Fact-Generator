@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Generate Fun Fact</title>
+    <link rel="stylesheet" href ="{% static 'generate_fact.css' %}">
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="{% url 'addFact' %}">Add Fun Fact</a>
+    <span> | </span>
+    <a href="{% url 'generateFact' %}">Generate Fun Fact</a>
+    <span> | </span>
+    <a href="">Liked Fun Facts</a>
+    <span> | </span>
+    <a href="">All Fun Facts</a>
+</div>
+<div id="factdisplay">
+    <div id="frame">
+        <p id="fact">{{fact}}
+         {% if  likedState == False %}
+            <a href=""><button id="likefact"><i class="fa-regular fa-heart"></i></button></a>
+            {% else %}
+            <a href=""><button id="unlikefact"><i class="fa-solid fa-heart"></i></button></a>
+            {% endif %}
+        </p>
+        <br>
+    </div>
+<a href="{% url 'generateFact' %}"><button id="generate" type="button">Generate</button> </a>
+</div>
+<script src="https://kit.fontawesome.com/f1b54785bc.js" crossorigin="anonymous"></script>
+</body>
+</html>

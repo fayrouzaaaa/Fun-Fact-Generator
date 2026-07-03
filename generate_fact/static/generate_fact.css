@@ -1,0 +1,76 @@
+.navbar{
+    text-align: center;
+}
+
+.navbar a, span {
+    color: #7ca0b5;
+    font-family: "Lucida Sans";
+}
+
+.navbar a:hover{
+    color: #456b7e;
+}
+
+#factdisplay {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#frame {
+    margin: 20px;
+    padding: 30px;
+    color: #253849;
+    border: 5px solid #7ca0b5;
+    border-radius: 10px;
+}
+
+#fact {
+    font-style: italic;
+    font-family: "Lucida Calligraphy";
+    text-align: center;
+}
+
+#likefact {
+    border: none;
+    background-color: transparent;
+    color: #a11010;
+}
+
+#likefact:hover {
+    transition: 0.2s;
+    transform: translateY(-5%);
+    color: #5c0c0c;
+    cursor:pointer;
+}
+
+#unlikefact {
+    border:none;
+    background-color: transparent;
+    color:#a11010;
+}
+
+#unlikefact:hover {
+    transition: 0.2s;
+    transform: translateY(-5%);
+    color: #5c0c0c;
+    cursor:pointer;
+}
+
+#generate {
+    background-color: #7ca0b5;
+    color: #ffffff;
+    border: 1px solid #456b7e;
+    border-radius: 6px;
+    padding: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 100%;
+}
+
+#generate:hover {
+    background-color: #456b7e;
+    transition: 0.2s;
+    transform: translateY(-5%);
+}

@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns=[
     path('addFunFact/', views.addButton),
-   # path('', views.generate_quote, name=""),
+    path('', views.generate_fact, name=""),
 ]

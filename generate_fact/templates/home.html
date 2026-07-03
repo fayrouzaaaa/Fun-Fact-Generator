@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" href ="{% static 'home.css' %}">
+</head>
+<body>
+<div class="navbar">
+    <a href="{% url 'addFact' %}">Add Fun Fact</a>
+    <span> | </span>
+    <a href="{% url 'generateFact' %}">Generate Fun Fact</a>
+    <span> | </span>
+    <a href="">Liked Fun Facts</a>
+    <span> | </span>
+    <a href="">All Fun Facts</a>
+</div>
+<div id="content">
+<h1 id="welcomeText"> Welcome to Fun Fact Generator! </h1>
+    <p id="description">Click to generate a fun fact :D</p>
+    <a href="{% url 'generateFact' %}"><button id="generate" type="button">Generate</button> </a>
+</div>
+</body>
+</html>

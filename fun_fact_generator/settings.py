@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'add_fact',
+    'generate_fact',
 ]
 
 MIDDLEWARE = [

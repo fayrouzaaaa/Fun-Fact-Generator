@@ -7,8 +7,8 @@ def addButton(request):
 
         Fact.objects.create(fact=fact)
 
-        #return redirect('/')
+        return redirect('/')
     return render(request, 'add_fact.html')
 
-#def generate_quote(request):
- #   return render(request,'home.html')
+def generate_fact(request):
+    return render(request,'home.html')

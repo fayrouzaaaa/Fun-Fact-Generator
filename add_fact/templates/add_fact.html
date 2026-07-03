@@ -8,9 +8,9 @@
 <body>
 
 <div class="navbar">
-    <a href="">Add Fun Fact</a>
+    <a href="{%url 'addFact' %}">Add Fun Fact</a>
     <span> | </span>
-    <a href="">Generate Fun Fact</a>
+    <a href="{%url 'generateFact' %}">Generate Fun Fact</a>
     <span> | </span>
     <a href="">Liked Fun Facts</a>
     <span> | </span>
@@ -26,7 +26,7 @@
 
     <div id="buttons">
     <button type = "submit" id="addButton">Add</button>
-    <a href=""><button type="button" id="cancelButton">Cancel</button></a>
+    <a href="{% url '' %}"><button type="button" id="cancelButton">Cancel</button></a>
     </div>
 </form>
 </body>
