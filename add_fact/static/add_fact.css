@@ -1,0 +1,100 @@
+.navbar{
+    text-align: center;
+}
+
+.navbar a, span {
+    color: #7ca0b5;
+    font-family: "Lucida Sans";
+}
+
+.navbar a:hover{
+    color: #456b7e;
+}
+
+#addForm {
+    margin: 40px;
+}
+
+#fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: #456b7e;
+    font-family:"Lucida Sans";
+    font-size: 1.2em;
+    align-self: auto;
+    position:fixed;
+    left: 630px;
+}
+
+label[for=fact]{
+    top: 55px;
+}
+
+input {
+    width: 255px;
+    padding: 12px;
+    border: 1px solid #beb5a9;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 255px;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid #beb5a9;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #456b7e;
+    outline:none;
+}
+
+#addButton {
+    background-color: #7ca0b5;
+    color: #ffffff;
+    border: 1px solid #456b7e;
+    border-radius: 6px;
+    padding: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 100%;
+    margin: 10px;
+    width:120px;
+}
+
+#cancelButton {
+    background-color: #d53434;
+    color: #ffffff;
+    border: 1px solid #880f0f;
+    border-radius: 6px;
+    padding: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 100%;
+    margin:10px;
+    width: 120px;
+}
+
+#addButton:hover {
+    background-color: #456b7e;
+    transition: 0.2s;
+    transform: translateY(-5%);
+}
+
+#cancelButton:hover {
+    background-color: #880f0f;
+    transition: 0.2s;
+    transform: translateY(-5%);
+}

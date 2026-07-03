@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <title>Add Fact</title>
+    <link rel="stylesheet" href="{% static 'add_fact.css' %}">
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="">Add Fun Fact</a>
+    <span> | </span>
+    <a href="">Generate Fun Fact</a>
+    <span> | </span>
+    <a href="">Liked Fun Facts</a>
+    <span> | </span>
+    <a href="">All Fun Facts</a>
+</div>
+
+<form id="addForm" name="addForm" method="POST">
+    {% csrf_token %}
+    <div id="fields">
+    <label for = "fact"> Fun Fact: </label> <br>
+    <textarea rows="5" columns = "20" name="fact" id="fact" placeholder="Enter fun fact here" required></textarea> <br> <br>
+    </div>
+
+    <div id="buttons">
+    <button type = "submit" id="addButton">Add</button>
+    <a href=""><button type="button" id="cancelButton">Cancel</button></a>
+    </div>
+</form>
+</body>
+</html>
