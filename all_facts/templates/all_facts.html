@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 {% load static %}
 <head>
-  <title>Liked Fun Facts</title>
-    <link rel="stylesheet" href ="{% static 'liked_facts.css' %}">
+  <title>All Fun Facts</title>
+    <link rel="stylesheet" href ="{% static 'all_facts.css' %}">
 </head>
 <body>
 <div class="navbar">
@@ -16,12 +16,12 @@
 
     {% for fact in facts %}
     <div id="facts">
-        <div id="fact">{{ fact.fact }} <a href="{% url 'unlike' fact.id %}"><button id="unlikefact"><i class="fa-solid fa-heart"></i></button></a></div>
+        <div id="fact">{{ fact.fact }} <a href="{% url 'delete' fact.id %}"><button id="deleteButton"><i class="fa-solid fa-trash"></i></button></a></div>
     </div>
         <hr>
 
     {% empty %}
-    <p id="emptyView">No liked fun facts yet</p>
+    <p id="emptyView">No fun facts yet</p>
     {% endfor %}
     <a href="{% url ''%}"><button id="backButton">Back</button></a>
 </div>

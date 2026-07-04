@@ -28,17 +28,17 @@
     font-size: 20px;
 }
 
-#unlikefact {
+#deleteButton{
     margin-left: 15px;
     border: none;
     background-color: transparent;
-    color: #a11010;
+    color: #e62a2a;
 }
 
-#unlikefact:hover {
+#deleteButton:hover{
     transition: 0.2s;
     transform: translateY(-5%);
-    color: #5c0c0c;
+    color: #931111;
     cursor:pointer;
 }
 

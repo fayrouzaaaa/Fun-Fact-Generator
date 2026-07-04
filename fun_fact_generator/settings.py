@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'add_fact',
     'generate_fact',
     'liked_facts',
+    'all_facts'
 ]
 
 MIDDLEWARE = [

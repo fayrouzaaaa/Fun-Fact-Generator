@@ -20,5 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('', include('add_fact.urls')),
     path('', include('generate_fact.urls')),
-    path('', include('liked_facts.urls'))
+    path('', include('liked_facts.urls')),
+    path('', include('all_facts.urls'))
 ]
